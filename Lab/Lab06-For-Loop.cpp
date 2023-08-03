@@ -18,8 +18,19 @@
 #include <stdio.h>
 
 int main() {
-
-    //--| YOUR CODE HERE
-
+    int a ; //--| YOUR CODE HERE
+    printf ( "Enter value: \n" );
+    scanf  ("%d", &a);
+    if (a % 2 == 1) {
+        printf("Series: ");  // กรณีผู้ใช้กรอกเลขคี่
+        for (int i = 1; i <= a; i += 2) {
+            printf("%d ", i);
+        }
+    } else {  // กรณีผู้ใช้กรอกเลขคู่
+        printf("Series: ");
+        for (int i = a; i >= 0; i -= 2) {
+        printf("%d ", i);
+        }
+    }    
     return 0 ;
 }//end main function
